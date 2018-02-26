@@ -3,6 +3,7 @@ const _ = require('underscore');
 function incompleteIntervals(txt, tuple) {
 	return _.chain(txt.split(tuple))
 	.rest()
+	.initial()
 	.map(substr => `${tuple}${substr}`.length)
 	.value();
 }
