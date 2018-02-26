@@ -9,6 +9,7 @@
     "underscore": "^1.8.3"
   },
   "scripts": {
+    "vigenere-2": "cd vigenere/2 && node solve",
     "vigenere-3": "cd vigenere/3 && node solve"
   }
 }
