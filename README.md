@@ -1,2 +1,2 @@
 # cipher
-some scripts for deciphering stuff
+some scripts for deciphering the enigmas in Matthew Brown's [Cipher](http://store.steampowered.com/app/746710/Cypher/). I highy recommend you check it out if you're interested in encryption and ciphering and stuff
