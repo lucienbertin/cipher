@@ -1,6 +1,6 @@
 const _ = require('underscore');
 
-function stats(intervals, keyLength) {
+function intervalDistribution(intervals, keyLength) {
 	const compatibles = _.map(intervals, i => (i % keyLength) === 0);
 	const length = intervals.length;
 	const randomDistribution = Math.floor(length / keyLength);
@@ -12,4 +12,16 @@ function stats(intervals, keyLength) {
 		pct: Math.floor(100 * (compatiblesCount - randomDistribution) / length),
 	}
 }
-module.exports.stats = stats;
+
+
+function letterDistribution(txt) {
+	return _.chain(txt)
+	.map(l => l)
+	.uniq()
+	.map(l => ({ letter: l, count: txt.split(l).length - 1 }))
+	.sortBy(d => -d.count)
+	.value();
+}
+
+module.exports.intervalDistribution = intervalDistribution;
+module.exports.letterDistribution = letterDistribution;
