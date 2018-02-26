@@ -3,6 +3,7 @@ const raw = require('./raw').raw;
 const extractRepeted = require('../../utils/extract-tuple').extractRepeted;
 const intervals = require('../utils/frequency').intervals;
 const decipher = require('../utils/decipher').decipher;
+const cipher = require('../utils/decipher').cipher;
 const transform = require('../utils/decipher').transform;
 const intervalDistribution = require('../utils/stat').intervalDistribution;
 const letterDistribution = require('../utils/stat').letterDistribution;
@@ -33,3 +34,4 @@ const letterDistributions = splitRaw.map(txt => ({
 console.log(letterDistributions[0])
 console.log(decipher('JCWSVLIVLVGSJJFJCWCVL', 'PU.'))
 console.log(decipher('JCWSVLIVLVGSJJFJCWCVL', 'PUR'))
+console.log(decipher('J', 'T'))
