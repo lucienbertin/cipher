@@ -1,0 +1,14 @@
+{
+  "name": "cipher",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:lucienbertin/cipher.git",
+  "author": "lucienbertin <me@lucienbertin.com>",
+  "license": "MIT",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  },
+  "scripts": {
+    "vigenere-3": "cd vigenere/3 && node solve"
+  }
+}
