@@ -23,3 +23,4 @@ function transform(letter, key, reverse) {
 
 module.exports.transform = transform;
 module.exports.decipher = decipher;
+module.exports.cipher = cipher;
